@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Aathif — Computer Science undergraduate and aspiring software engineer from Kandy, Sri Lanka. UX designer at Orbit360 building full-stack web apps with React, Node.js and PHP.">
+
+    <!-- UNICONS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-light.css">
+
+    <title>Mohamed Aathif | Software Engineer (Light)</title>
+</head>
+<body>
+    <!-- Ambient blurred orbs background -->
+    <ul class="bg-bubbles" aria-hidden="true">
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+    <div class="container">
+    <!----------Header------------->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">&lt;ATF&gt;</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav-menu-list">
+                <li class="nav-list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="My Resume.pdf" download="Mohamed Aathif_CV.pdf" style="text-decoration: none;"><button class="btn"> Download CV<i class="uil uil-file-download"></i></button></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!----------Main------------->
+    <main class="wrapper">
+                <!----------Featured Box------------->
+
+        <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Mohamed Aathif</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>
+                            <b>Computer Science undergraduate</b> at the <b>University of Ruhuna</b> with 1+ years of hands-on UX experience at Orbit360,
+                            now growing into software engineering. I turn user requirements into structured, technically sound interfaces,
+                            and I build and ship full-stack products for real businesses.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })">Hire Me</button>
+                        <button class="btn" onclick="navigateTo('PreviewCV.html')">Preview CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <a href="https://github.com/uditha2001/EMS" target="_blank" rel="noopener" class="icon" aria-label="GitHub">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-aathif169" target="_blank" rel="noopener" class="icon" aria-label="LinkedIn">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.behance.net/mohamedaathif11" target="_blank" rel="noopener" class="icon" aria-label="Behance">
+                            <i class="uil uil-behance"></i>
+                        </a>
+                        <a href="mailto:aathifmhd2000@gmail.com" class="icon" aria-label="Email">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="./Myphoto.png" alt="Mohamed Aathif">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                    <i class="uil uil-mouse-alt"></i>
+                    <p>Scroll Down</p>
+                    </a>
+                </div>
+        </section>
+
+
+                <!----------About Box------------->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+                <span>Kandy, Sri Lanka</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3>Professional Summary</h3>
+                        <p>Computer Science graduate with 1+ years of hands-on experience in UX design, currently transitioning
+                            into software engineering. Skilled at translating user requirements into structured, technically sound
+                            interfaces, and experienced working alongside developers throughout the build process. Now developing
+                            core backend skills in PHP and Laravel to grow into a full-stack contributor.</p>
+                            <div class="about-btn">
+                                <a href="My Resume.pdf" download="Mohamed Aathif_CV.pdf" style="text-decoration: none;"><button class="btn"> Download CV<i class="uil uil-file-download"></i></button></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="timeline">
+                        <h3><i class="uil uil-graduation-cap"></i> Education</h3>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 – 2025 · Graduating Dec 2026</span>
+                            <h4>Bachelor of Computer Science</h4>
+                            <p>University of Ruhuna</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2016 – 2019</span>
+                            <h4>GCE Advanced Level — Physical Science</h4>
+                            <p>Zahira College, Mawanella · 3B passes · Z-score 1.4809</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                <!----------Experience Box------------->
+        <section class="section" id="experience">
+            <div class="top-header">
+                <h1>Experience</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="timeline">
+                        <h3><i class="uil uil-briefcase-alt"></i> Orbit360 (Pvt) Ltd</h3>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Feb 2026 – Present</span>
+                            <h4>UX Designer — Associate</h4>
+                            <p>Designing product interfaces and working with developers through the build.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Feb 2025 – Feb 2026</span>
+                            <h4>UX Designer — Intern (Hybrid)</h4>
+                            <p>Wireframes, user flows and high-fidelity prototypes for multi-module web and mobile products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col res-col">
+                    <div class="skills-grid">
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>Frontend</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>ReactJS</span><span>TypeScript</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>Backend</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>Node.js</span><span>NestJS</span><span>RESTful APIs</span><span>MySQL</span><span>PHP</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>Tools &amp; Version Control</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>Design &amp; Prototyping</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>Figma</span><span>Adobe XD</span><span>Adobe Illustrator</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>AI Tools</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>GitHub Copilot</span><span>ChatGPT</span><span>Claude</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header res-skills-header"><h3>Methodologies</h3></div>
+                            <div class="skills-list res-skills-list">
+                                <span>Agile</span><span>Cross-functional Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                <!----------Project Box------------->
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+                <span>Built, deployed and used by real businesses</span>
+            </div>
+            <div class="cv-projects">
+                <article class="cv-project featured-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-store"></i>
+                        <h3>Regal Hardware ERP &amp; POS</h3>
+                    </div>
+                    <p>Built and deployed an Odoo-based POS and a custom ERP for a 5-terminal hardware store — legacy data migration,
+                        invoice redesign, fingerprint-integrated attendance and payroll, and SMS billing. The customer site is an online
+                        store whose orders flow straight into the ERP.</p>
+                    <div class="tech-tags"><span>Odoo</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://regalhw.lk" target="_blank" rel="noopener">Customer site <i class="uil uil-external-link-alt"></i></a>
+                        <a class="btn" href="https://regalhw.lk/demo" target="_blank" rel="noopener">POS &amp; ERP demo <i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="cv-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-file-check-alt"></i>
+                        <h3>Exam Management System</h3>
+                    </div>
+                    <p>A secure system for the Department of Computer Science that digitizes academic exam workflows: role-based user
+                        management, automated grading, result dissemination and encrypted data handling. Worked across requirements,
+                        design, development and testing.</p>
+                    <div class="tech-tags"><span>ReactJS</span><span>Spring Boot</span><span>MySQL</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://github.com/uditha2001/EMS" target="_blank" rel="noopener"><i class="uil uil-github-alt"></i> GitHub</a>
+                    </div>
+                </article>
+
+                <article class="cv-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-car-wash"></i>
+                        <h3>Gloss Workx</h3>
+                    </div>
+                    <p>Website for a local car detailing business, with a booking form wired to Google Apps Script that automates
+                        appointment submissions and client outreach. Gathered requirements directly with the client.</p>
+                    <div class="tech-tags"><span>ReactJS</span><span>Google Apps Script</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://glossworkx-landing-page.web.app" target="_blank" rel="noopener">Visit site <i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="cv-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-building"></i>
+                        <h3>YYR International Trading</h3>
+                    </div>
+                    <p>Multi-service client website spanning real estate, brokerage and retail, managed through a Firebase-powered
+                        admin panel.</p>
+                    <div class="tech-tags"><span>ReactJS</span><span>Firebase</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://yyr-international-trading.web.app" target="_blank" rel="noopener">Visit site <i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="cv-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-diamond"></i>
+                        <h3>Veloura</h3>
+                    </div>
+                    <p>Luxury retail storefront with owner-editable product listings, category filtering and WhatsApp-integrated
+                        ordering.</p>
+                    <div class="tech-tags"><span>ReactJS</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://veloura-online-store.web.app" target="_blank" rel="noopener">Visit site <i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </article>
+
+                <article class="cv-project">
+                    <div class="cv-project-head">
+                        <i class="uil uil-coffee"></i>
+                        <h3>Amore Ice Cream</h3>
+                    </div>
+                    <p>Speculative outreach website for a local café and gelato shop, built from their menu and social content.</p>
+                    <div class="tech-tags"><span>ReactJS</span></div>
+                    <div class="cv-project-links">
+                        <a class="btn" href="https://amore-icecream.web.app" target="_blank" rel="noopener">Visit site <i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="more-work">
+                <span>UX case studies from Orbit360 and personal work:</span>
+                <a href="WebApp.html">Web apps <i class="uil uil-arrow-right"></i></a>
+                <a href="MobileApp.html">Mobile apps <i class="uil uil-arrow-right"></i></a>
+            </div>
+        </section>
+
+
+                <!----------Contact Box------------->
+        <section class="section" id="Contact">
+                <div class="top-header">
+                    <h1>Get In Touch</h1>
+                    <span>Have a role or a project in mind? Contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-arrow-down"></i></h2>
+                            <p><i class="uil uil-envelope-minus"></i> aathifmhd2000@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> +94 76 944 2270</p>
+                            <p><i class="uil uil-map-marker"></i> Kandy, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="form-control">
+                            <input type="hidden" name="access_key" value="84de46ac-b13c-4087-8857-99102b4859b6">
+                            <div class="form-inputs">
+                                <input name="name" type="text" class="input-field" placeholder="Your Name">
+                                <input name="email" type="email" class="input-field" placeholder="Your Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn"> Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <!----------Footer------------->
+    <footer>
+            <div class="top-footer">
+                <p>Mohamed Aathif .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list"><a href="#home">Home</a></li>
+                    <li class="footer_menu_list"><a href="#about">About</a></li>
+                    <li class="footer_menu_list"><a href="#experience">Experience</a></li>
+                    <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+                    <li class="footer_menu_list"><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                        <div class="icon"> <a href="https://github.com/uditha2001/EMS" target="_blank" rel="noopener" class="icon" aria-label="GitHub"><i class="uil uil-github-alt"></i></a></div>
+                        <div class="icon"> <a href="https://www.linkedin.com/in/mohamed-aathif169" target="_blank" rel="noopener" class="icon" aria-label="LinkedIn"><i class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"> <a href="https://www.behance.net/mohamedaathif11" target="_blank" rel="noopener" class="icon" aria-label="Behance"><i class="uil uil-behance"></i></a></div>
+                        <div class="icon"> <a href="mailto:aathifmhd2000@gmail.com" class="icon" aria-label="Email"><i class="uil uil-envelope"></i></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">&lt;ATF&gt;</a> - All rights reserved</p>
+            </div>
+    </footer>
+    <a class="theme-switch" href="dark.html"><i class="uil uil-moon"></i> Dark version</a>
+
+    </div>
+    <!----------Typing JS Link------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!----------Scroll reveal JS LInk------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!----------Main JS------------->
+    <script src="./main.js"></script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCkABo6TURYq90RaMPTMPyiyjW9AVQvjJ0",
+    authDomain: "aathifmhd-portfolio.firebaseapp.com",
+    projectId: "aathifmhd-portfolio",
+    storageBucket: "aathifmhd-portfolio.firebasestorage.app",
+    messagingSenderId: "61204420621",
+    appId: "1:61204420621:web:101b7a896607e521941d44",
+    measurementId: "G-ND0BKQWJYH"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+</html>

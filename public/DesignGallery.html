@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- UNICONS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS (site theme) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favourite icon-->
+    <title>Design Gallery - Portfolio</title>
+</head>
+<body class="page-design">
+    <!-- Ambient blurred orbs background -->
+    <ul class="bg-bubbles" aria-hidden="true">
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+    <div class="wrapper">
+        <div class="top-header">
+            <a class="btn back-btn" href="index.html"><i class="uil uil-arrow-left"></i> Back</a>
+            <h1>Design Gallery</h1>
+        </div>
+
+        <div class="Design-container" id="design-container"></div>
+    </div>
+
+    <!---------- Scroll reveal JS Link ---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script>
+        // Create design cards using the shared theme classes
+        const designs = [
+            { title: "Web Design", icon: "uil-globe", desc: "Modern and responsive web design solutions" },
+            { title: "UI/UX Design", icon: "uil-object-group", desc: "User-centered interface designs" },
+            { title: "Mobile Design", icon: "uil-mobile-android", desc: "Mobile-first application designs" },
+            { title: "Brand Identity", icon: "uil-bolt", desc: "Complete branding solutions" },
+            { title: "Print Design", icon: "uil-print", desc: "Professional print materials" },
+            { title: "Motion Graphics", icon: "uil-play", desc: "Engaging animated content" }
+        ];
+
+        const container = document.getElementById('design-container');
+        designs.forEach(design => {
+            const card = document.createElement('div');
+            card.className = 'Design-box';
+            card.innerHTML = `
+                <div class="design-icon" aria-hidden="true"><i class="uil ${design.icon}"></i></div>
+                <h3>${design.title}</h3>
+                <p>${design.desc}</p>
+            `;
+            container.appendChild(card);
+        });
+
+        // Scroll reveal
+        ScrollReveal().reveal('.Design-box', {
+            delay: 200,
+            distance: '40px',
+            duration: 1000,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 120,
+            origin: 'bottom',
+            reset: true
+        });
+    </script>
+</body>
+</html>

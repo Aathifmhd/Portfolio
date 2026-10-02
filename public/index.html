@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Aathif — Computer Science undergraduate and software engineer from Kandy, Sri Lanka. Building full-stack products with React, TypeScript, Node.js, NestJS, PHP and MySQL.">
+    <meta name="theme-color" content="#f7f9fc">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./engineer.css">
+
+    <title>Mohamed Aathif · Software Engineer</title>
+</head>
+<body>
+    <!-- Background animation: code symbols drifting up behind the whole page -->
+    <div class="code-rain" id="codeRain" aria-hidden="true"></div>
+
+    <!-- ========== NAV ========== -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="logo" aria-label="Mohamed Aathif — home">
+                <span class="br">&lt;</span>aathif<span class="br">/&gt;</span><span class="caret" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about"><span class="num">01</span>About</a></li>
+                <li><a href="#experience"><span class="num">02</span>Experience</a></li>
+                <li><a href="#stack"><span class="num">03</span>Stack</a></li>
+                <li><a href="#projects"><span class="num">04</span>Projects</a></li>
+                <li><a href="#contact"><span class="num">05</span>Contact</a></li>
+            </ul>
+            <a class="btn btn-primary btn-sm btn-resume" href="My Resume.pdf" download="Mohamed Aathif_CV.pdf">
+                <i class="uil uil-file-download-alt"></i> Résumé
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                <i class="uil uil-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <div class="hero-id">
+                            <div class="avatar"><img src="./profile.webp" alt="Mohamed Aathif"></div>
+                            <span class="status"><span class="dot"></span> Open to software engineering roles</span>
+                        </div>
+                        <p class="eyebrow">// hello, world — I'm</p>
+                        <h1>Mohamed Aathif<span class="role">Software Engineer.</span></h1>
+                        <p class="lede">
+                            <strong>Computer Science undergraduate</strong> with 1+ years of hands-on UX at Orbit360,
+                            now building as a full-stack engineer. I turn user requirements into structured,
+                            technically sound software — and ship it to real businesses.
+                        </p>
+                        <div class="hero-meta">
+                            <span><i class="uil uil-map-marker"></i> Kandy, Sri Lanka</span>
+                            <span><i class="uil uil-graduation-cap"></i> University of Ruhuna</span>
+                            <span><i class="uil uil-briefcase-alt"></i> Orbit360 (Pvt) Ltd</span>
+                        </div>
+                        <div class="hero-cta">
+                            <a class="btn btn-accent" href="#projects">View projects <i class="uil uil-arrow-right"></i></a>
+                            <a class="btn" href="PreviewCV.html"><i class="uil uil-file-alt"></i> Preview CV</a>
+                        </div>
+                        <div class="socials">
+                            <a class="social" href="https://github.com/uditha2001/EMS" target="_blank" rel="noopener" aria-label="GitHub"><i class="uil uil-github-alt"></i></a>
+                            <a class="social" href="https://www.linkedin.com/in/mohamed-aathif169" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
+                            <a class="social" href="https://www.behance.net/mohamedaathif11" target="_blank" rel="noopener" aria-label="Behance"><i class="uil uil-behance"></i></a>
+                            <a class="social" href="mailto:aathifmhd2000@gmail.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="code-window" id="codeWindow" aria-label="Code editor">
+                        <div class="cw-bar">
+                            <div class="cw-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+                            <div class="cw-tabs" id="cwTabs" role="tablist" aria-label="Open files">
+                                <div class="cw-tab active" role="tab" aria-selected="true" tabindex="0" data-id="engineer"><b>TS</b> engineer.ts</div>
+                            </div>
+                            <button class="cw-add" id="cwAdd" type="button" title="New tab — try the code pad" aria-label="Open a new tab"><i class="uil uil-plus"></i><span>New</span></button>
+                        </div>
+                        <div class="cw-body" id="cwStatic">
+                            <ol>
+<li style="--i:0"><span class="t-com">// engineer.ts — compiled from my CV</span></li>
+<li style="--i:1"><span class="t-key">const</span> <span class="t-var">engineer</span> <span class="t-pun">=</span> <span class="t-pun">{</span></li>
+<li style="--i:2">  <span class="t-prop">name</span><span class="t-pun">:</span> <span class="t-str">"Mohamed Aathif"</span><span class="t-pun">,</span></li>
+<li style="--i:3">  <span class="t-prop">role</span><span class="t-pun">:</span> <span class="t-str">"Software Engineer"</span><span class="t-pun">,</span></li>
+<li style="--i:4">  <span class="t-prop">degree</span><span class="t-pun">:</span> <span class="t-str">"BSc Computer Science"</span><span class="t-pun">,</span></li>
+<li style="--i:5">  <span class="t-prop">frontend</span><span class="t-pun">:</span> <span class="t-pun">[</span><span class="t-str">"React"</span><span class="t-pun">,</span> <span class="t-str">"TypeScript"</span><span class="t-pun">],</span></li>
+<li style="--i:6">  <span class="t-prop">backend</span><span class="t-pun">:</span> <span class="t-pun">[</span><span class="t-str">"Node.js"</span><span class="t-pun">,</span> <span class="t-str">"NestJS"</span><span class="t-pun">,</span> <span class="t-str">"PHP"</span><span class="t-pun">],</span></li>
+<li style="--i:7">  <span class="t-prop">database</span><span class="t-pun">:</span> <span class="t-str">"MySQL"</span><span class="t-pun">,</span></li>
+<li style="--i:8">  <span class="t-prop">shipping</span><span class="t-pun">:</span> <span class="t-str">"regalhw.lk ERP &amp; POS"</span><span class="t-pun">,</span></li>
+<li style="--i:9">  <span class="t-prop">available</span><span class="t-pun">:</span> <span class="t-bool">true</span><span class="t-pun">,</span></li>
+<li style="--i:10"><span class="t-pun">};</span></li>
+<li style="--i:11"> </li>
+<li style="--i:12"><span class="t-key">export default</span> <span class="t-var">engineer</span><span class="t-pun">;</span> <span class="cursor" aria-hidden="true"></span></li>
+                            </ol>
+                        </div>
+                        <div class="cw-editor" id="cwEditor" hidden>
+                            <div class="ed-gutter" id="edGutter" aria-hidden="true"></div>
+                            <div class="ed-area">
+                                <pre class="ed-hl" aria-hidden="true"><code id="edHl"></code></pre>
+                                <textarea class="ed-input" id="edInput" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" wrap="off" aria-label="Code pad. Press Escape to leave the editor."></textarea>
+                            </div>
+                        </div>
+                        <div class="cw-foot">
+                            <span id="cwLeft">main ● UTF-8 · TypeScript</span>
+                            <span class="ok" id="cwRight">✓ 0 problems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats reveal">
+                    <div class="stat"><b>1+ yrs</b><span>UX experience at Orbit360</span></div>
+                    <div class="stat"><b>6</b><span>Projects shipped</span></div>
+                    <div class="stat"><b>5</b><span>POS terminals in production</span></div>
+                    <div class="stat"><b>Dec 2026</b><span>BSc Computer Science</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="idx">01 / about</span>
+                    <h2>Designer's eye, engineer's discipline.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="card about-text reveal">
+                        <p>I'm a Computer Science graduate with 1+ years of hands-on experience in UX design, currently
+                            transitioning into software engineering.</p>
+                        <p>I'm skilled at translating user requirements into structured, technically sound interfaces,
+                            and I've worked alongside developers through the whole build process. That means the
+                            things I build are considered from both sides: how people use them, and how they're made.</p>
+                        <div class="focus">
+                            <i class="uil uil-crosshair"></i>
+                            <span><b>Currently:</b> deepening core backend skills in PHP and Laravel to grow into a full-stack contributor.</span>
+                        </div>
+                    </div>
+                    <div class="edu">
+                        <div class="card edu-item reveal">
+                            <span class="edu-icon"><i class="uil uil-graduation-cap"></i></span>
+                            <div>
+                                <h3>Bachelor of Computer Science</h3>
+                                <p>University of Ruhuna</p>
+                                <span class="when">2022 – 2025 · graduation Dec 2026</span>
+                            </div>
+                        </div>
+                        <div class="card edu-item reveal">
+                            <span class="edu-icon"><i class="uil uil-book-open"></i></span>
+                            <div>
+                                <h3>GCE Advanced Level — Physical Science</h3>
+                                <p>Zahira College, Mawanella · 3B passes · Z-score 1.4809</p>
+                                <span class="when">2016 – 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE ========== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="idx">02 / experience</span>
+                    <h2>Where I've been building.</h2>
+                </div>
+                <div class="card gitlog reveal">
+                    <div class="gitlog-head">
+                        <span>$ git log <b>--career</b> --oneline</span>
+                        <span>2 commits · Orbit360 (Pvt) Ltd</span>
+                    </div>
+                    <div class="commit head">
+                        <div class="commit-rail"><span class="commit-dot"></span></div>
+                        <div>
+                            <div class="commit-top">
+                                <span class="hash">a7f3c2e</span>
+                                <span class="ref">HEAD → current</span>
+                                <span class="date">Feb 2026 — Present</span>
+                            </div>
+                            <h3>UX Designer — Associate</h3>
+                            <p class="org">Orbit360 (Pvt) Ltd</p>
+                            <ul>
+                                <li>Translating user requirements into structured, buildable interfaces for product teams.</li>
+                                <li>Working alongside developers through implementation, handoff and review.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="commit">
+                        <div class="commit-rail"><span class="commit-dot"></span></div>
+                        <div>
+                            <div class="commit-top">
+                                <span class="hash">3e91b0d</span>
+                                <span class="ref tag">intern · hybrid</span>
+                                <span class="date">Feb 2025 — Feb 2026</span>
+                            </div>
+                            <h3>UX Designer — Intern</h3>
+                            <p class="org">Orbit360 (Pvt) Ltd</p>
+                            <ul>
+                                <li>Produced 30+ wireframes, user flows and high-fidelity prototypes across 6 modules.</li>
+                                <li>Partnered with developers and stakeholders; ran usability testing and iterated on feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== STACK ========== -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="idx">03 / stack</span>
+                    <h2>Tools I ship with.</h2>
+                    <p>From interface to API to database, plus the design and AI tooling that speeds it up.</p>
+                </div>
+                <div class="stack-grid">
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-window"></i><div><h3>Frontend</h3><small>client</small></div></div>
+                        <div class="chips"><span class="chip">ReactJS</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Tailwind CSS</span></div>
+                    </div>
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-server-network"></i><div><h3>Backend</h3><small>server · data</small></div></div>
+                        <div class="chips"><span class="chip">Node.js</span><span class="chip">NestJS</span><span class="chip">RESTful APIs</span><span class="chip">PHP</span><span class="chip">MySQL</span></div>
+                    </div>
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-code-branch"></i><div><h3>Tools &amp; VCS</h3><small>workflow</small></div></div>
+                        <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">VS Code</span></div>
+                    </div>
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-pen"></i><div><h3>Design &amp; Prototyping</h3><small>ux · ui</small></div></div>
+                        <div class="chips"><span class="chip">Figma</span><span class="chip">Adobe XD</span><span class="chip">Adobe Illustrator</span></div>
+                    </div>
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-robot"></i><div><h3>AI Tools</h3><small>assisted dev · debugging</small></div></div>
+                        <div class="chips"><span class="chip">GitHub Copilot</span><span class="chip">ChatGPT</span><span class="chip">Claude</span></div>
+                    </div>
+                    <div class="card stack reveal">
+                        <div class="stack-top"><i class="uil uil-sync"></i><div><h3>Methodologies</h3><small>process</small></div></div>
+                        <div class="chips"><span class="chip">Agile</span><span class="chip">Cross-functional collaboration</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS ========== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="idx">04 / projects</span>
+                    <h2>Shipped to production.</h2>
+                    <p>Real systems for real businesses — from a 5-terminal ERP to client websites.</p>
+                </div>
+
+                <div class="projects">
+                    <article class="card project project-featured reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/regal-hardware-erp</span>
+                            <span class="badge"><span class="dot"></span> live in production</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="featured-left">
+                                <h3>Regal Hardware ERP &amp; POS</h3>
+                                <p>Built and deployed an Odoo-based POS and a custom ERP for a 5-terminal hardware store.
+                                    Its customer website is an online store where orders flow directly into the ERP.</p>
+                                <div class="chips"><span class="chip">Odoo</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span></div>
+                                <div class="project-links">
+                                    <a class="btn btn-primary btn-sm" href="https://regalhw.lk/demo" target="_blank" rel="noopener"><i class="uil uil-play"></i> Live POS demo</a>
+                                    <a class="btn btn-sm" href="https://regalhw.lk" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> regalhw.lk</a>
+                                </div>
+                            </div>
+                            <ul class="feature-list">
+                                <li><i class="uil uil-database"></i> Legacy data migration into the new system</li>
+                                <li><i class="uil uil-receipt"></i> Invoice redesign</li>
+                                <li><i class="uil uil-fingerprint"></i> Fingerprint-integrated attendance &amp; payroll</li>
+                                <li><i class="uil uil-comment-message"></i> SMS billing for customers</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/exam-management-system</span>
+                            <span class="badge repo"><i class="uil uil-github-alt"></i> repo</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Exam Management System</h3>
+                            <p>A secure system for the Department of Computer Science that digitizes exam workflows:
+                                role-based user management, automated grading, result dissemination and encrypted data
+                                handling. Worked across requirements, design, development and testing.</p>
+                            <div class="chips"><span class="chip">ReactJS</span><span class="chip">Spring Boot</span><span class="chip">MySQL</span></div>
+                            <div class="project-links">
+                                <a class="btn btn-sm" href="https://github.com/uditha2001/EMS" target="_blank" rel="noopener"><i class="uil uil-github-alt"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/gloss-workx</span>
+                            <span class="badge"><span class="dot"></span> live</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Gloss Workx</h3>
+                            <p>Website for a local car detailing business, with a booking form wired to Google Apps Script
+                                that automates appointment submissions and client outreach. Gathered requirements directly with the client.</p>
+                            <div class="chips"><span class="chip">ReactJS</span><span class="chip">Google Apps Script</span></div>
+                            <div class="project-links">
+                                <a class="btn btn-sm" href="https://glossworkx-landing-page.web.app" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> Visit site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/yyr-international</span>
+                            <span class="badge"><span class="dot"></span> live</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>YYR International Trading</h3>
+                            <p>Multi-service client website spanning real estate, brokerage and retail, managed through a
+                                Firebase-powered admin panel.</p>
+                            <div class="chips"><span class="chip">ReactJS</span><span class="chip">Firebase</span></div>
+                            <div class="project-links">
+                                <a class="btn btn-sm" href="https://yyr-international-trading.web.app" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> Visit site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/veloura</span>
+                            <span class="badge"><span class="dot"></span> live</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Veloura</h3>
+                            <p>Luxury retail storefront with owner-editable product listings, category filtering and
+                                WhatsApp-integrated ordering.</p>
+                            <div class="chips"><span class="chip">ReactJS</span></div>
+                            <div class="project-links">
+                                <a class="btn btn-sm" href="https://veloura-online-store.web.app" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> Visit site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project-path">
+                            <span><i class="uil uil-folder"></i> ~/projects/amore-icecream</span>
+                            <span class="badge"><span class="dot"></span> live</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Amore Ice Cream</h3>
+                            <p>Speculative outreach website for a local café and gelato shop, built from their menu and
+                                social content.</p>
+                            <div class="chips"><span class="chip">ReactJS</span></div>
+                            <div class="project-links">
+                                <a class="btn btn-sm" href="https://amore-icecream.web.app" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> Visit site</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="more-work reveal">
+                    <span>Looking for my UX case studies?</span>
+                    <a href="WebApp.html">Web apps <i class="uil uil-angle-right"></i></a>
+                    <a href="MobileApp.html">Mobile apps <i class="uil uil-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="idx">05 / contact</span>
+                    <h2>Let's build something.</h2>
+                    <p>Hiring for a software engineering role, or have a project in mind? I'd like to hear about it.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="terminal reveal">
+                        <div class="cw-bar">
+                            <div class="cw-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+                            <small>zsh — contact</small>
+                        </div>
+                        <div class="term-body">
+                            <div><span class="p">aathif@kandy</span> <span class="c">~ $</span> cat contact.txt</div>
+                            <a class="term-row" href="mailto:aathifmhd2000@gmail.com"><i class="uil uil-envelope"></i> aathifmhd2000@gmail.com</a>
+                            <a class="term-row" href="tel:+94769442270"><i class="uil uil-phone"></i> +94 76 944 2270</a>
+                            <a class="term-row" href="https://www.linkedin.com/in/mohamed-aathif169" target="_blank" rel="noopener"><i class="uil uil-linkedin-alt"></i> linkedin.com/in/mohamed-aathif169</a>
+                            <div class="term-row"><i class="uil uil-map-marker"></i> Kandy, Sri Lanka · GMT+5:30</div>
+                        </div>
+                    </div>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="card form reveal">
+                        <input type="hidden" name="access_key" value="84de46ac-b13c-4087-8857-99102b4859b6">
+                        <h3>Send a message</h3>
+                        <p class="sub">I usually reply within a day.</p>
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="f-name">Name</label>
+                                <input id="f-name" name="name" type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="field">
+                                <label for="f-email">Email</label>
+                                <input id="f-email" name="email" type="email" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="f-msg">Message</label>
+                            <textarea id="f-msg" name="message" placeholder="Tell me about the role or project…" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent"><i class="uil uil-message"></i> Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© <span id="year">2026</span> Mohamed Aathif. All rights reserved.</span>
+            <span class="mono">built with HTML · CSS · JavaScript</span>
+            <div class="footer-links">
+                <a href="#top">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./code-rain.js"></script>
+    <script src="./engineer.js"></script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCkABo6TURYq90RaMPTMPyiyjW9AVQvjJ0",
+    authDomain: "aathifmhd-portfolio.firebaseapp.com",
+    projectId: "aathifmhd-portfolio",
+    storageBucket: "aathifmhd-portfolio.firebasestorage.app",
+    messagingSenderId: "61204420621",
+    appId: "1:61204420621:web:101b7a896607e521941d44",
+    measurementId: "G-ND0BKQWJYH"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

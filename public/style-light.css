@@ -1,0 +1,231 @@
+/*-----------LIGHT THEME (loaded after style.css)---------*/
+:root{
+    --body-color: #f6f5fb;
+    --ink: #14142b;
+    --ink-2: #3f3f5a;
+    --ink-3: #6b6b85;
+    --accent: #6d28d9;          /* violet */
+    --accent-2: #0e7490;        /* deep teal — readable on white */
+    --card: #ffffff;
+    --line: rgba(20, 20, 43, 0.09);
+    --line-2: rgba(20, 20, 43, 0.16);
+    --text-color-second: var(--ink-2);
+    --text-color-third: var(--ink-3);
+    --second-color: var(--accent-2);
+    --shadow: 0 22px 50px rgba(64, 40, 140, 0.14);
+    --shadow-soft: 0 10px 30px rgba(64, 40, 140, 0.08);
+    color-scheme: light;
+}
+
+body{
+    background: radial-gradient(1100px 760px at 12% 6%, rgba(167, 139, 250, 0.28), transparent 60%),
+                radial-gradient(900px 640px at 88% 12%, rgba(103, 232, 249, 0.26), transparent 60%),
+                var(--body-color);
+    color: var(--ink-2);
+}
+
+::-webkit-scrollbar-track{ background: rgba(20,20,43,0.04); }
+::-webkit-scrollbar-thumb{ background: rgba(20,20,43,0.18); }
+::-webkit-scrollbar-thumb:hover{ background: rgba(20,20,43,0.28); }
+
+/* Bubbles: soft lilac glass */
+.bg-bubbles li{
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.95), rgba(167,139,250,0.30) 60%, rgba(103,232,249,0.18));
+    border-color: rgba(109, 40, 217, 0.12);
+    opacity: 0.7;
+}
+
+/* Nav */
+nav{
+    background: rgba(255,255,255,0.72);
+    border-bottom: 1px solid var(--line);
+}
+.nav-name{ color: var(--ink); }
+.nav-logo span{ color: rgba(109, 40, 217, 0.35); }
+.nav-link{ color: var(--ink-3); }
+.nav-link:hover{ color: var(--ink); }
+.active-link{ color: var(--accent); }
+.active-link::after{ background: var(--accent); }
+.nav-menu-btn i{ color: var(--ink); }
+
+/* Buttons */
+.btn{
+    background: var(--card);
+    color: var(--ink);
+    border: 1px solid var(--line-2);
+    box-shadow: 0 4px 14px rgba(20,20,43,0.06);
+}
+.btn:hover{
+    background: #faf8ff;
+    border-color: rgba(109, 40, 217, 0.35);
+    color: var(--accent);
+}
+.featured-text-btn>.blue-btn,
+.about-btn button,
+.form-button>.btn,
+.nav-button .btn{
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 24px rgba(109, 40, 217, 0.25);
+}
+.featured-text-btn>.blue-btn:hover,
+.form-button>.btn:hover,
+.nav-button .btn:hover{
+    color: #fff;
+    filter: brightness(1.08);
+}
+
+/* Hero */
+.featured-text-card span{
+    background: linear-gradient(90deg, rgba(109,40,217,0.12), rgba(14,116,144,0.12));
+    color: var(--accent);
+    border: 1px solid rgba(109,40,217,0.18);
+}
+.featured-name{ color: var(--ink); }
+.typedText{
+    background: linear-gradient(90deg, #7c3aed, #0891b2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: none;
+}
+.typed-cursor{ color: var(--accent); }
+.featured-text-info{ color: var(--ink-3); }
+.featured-text-info b{ color: var(--ink); }
+
+.icon,
+.social_icons .icon{
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 20px rgba(64, 40, 140, 0.10);
+}
+.icon i{ color: var(--ink); }
+.icon:hover i{ color: var(--accent); }
+
+.image{
+    border: 6px solid #fff;
+    box-shadow: 0 30px 60px rgba(64, 40, 140, 0.20);
+}
+
+.scroll-btn{
+    color: var(--ink-2);
+    background: rgba(255,255,255,0.8);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+}
+.scroll-btn:hover{ color: var(--accent); }
+
+/* Headings */
+.top-header h1,
+h3{ color: var(--ink); }
+.top-header span{ color: var(--ink-3); }
+
+/* Cards */
+.about-info,
+.timeline,
+.cv-project,
+.secondpage-content{
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+}
+.about-info p{ color: var(--ink-3); }
+
+.featured-project{
+    background: linear-gradient(135deg, #f3edff, #e6f7fb);
+    border-color: rgba(109, 40, 217, 0.18);
+}
+.cv-project:hover{
+    border-color: rgba(109, 40, 217, 0.25);
+}
+.cv-project p{ color: var(--ink-3); }
+.cv-project-head i{
+    color: var(--accent);
+    background: rgba(109, 40, 217, 0.08);
+    border-color: rgba(109, 40, 217, 0.16);
+}
+
+.timeline h3 i{ color: var(--accent); }
+.timeline-item{ border-left-color: var(--line-2); }
+.timeline-item::before{ box-shadow: 0 0 0 4px rgba(109,40,217,0.12); }
+.timeline-date{ color: var(--accent-2); font-weight: 500; }
+.timeline-item h4{ color: var(--ink); }
+.timeline-item p{ color: var(--ink-3); }
+
+.skills-list span{
+    background: var(--card);
+    color: var(--ink-2);
+    border: 1px solid var(--line-2);
+}
+.tech-tags span{
+    color: var(--accent-2);
+    background: rgba(14, 116, 144, 0.07);
+    border-color: rgba(14, 116, 144, 0.22);
+}
+
+.more-work{ color: var(--ink-3); }
+.more-work a{ color: var(--accent); }
+.more-work a:hover{ color: var(--ink); }
+
+/* Contact */
+.contact-info{
+    background: linear-gradient(135deg, #6d28d9, #0e7490);
+    border-color: transparent;
+    box-shadow: 0 24px 50px rgba(109, 40, 217, 0.25);
+}
+.contact-info:hover{
+    background: linear-gradient(135deg, #7c3aed, #0891b2);
+    box-shadow: 0 30px 60px rgba(109, 40, 217, 0.32);
+}
+
+.input-field,
+textarea{
+    background: var(--card);
+    border: 1px solid var(--line-2);
+    color: var(--ink);
+}
+.input-field::placeholder,
+textarea::placeholder{ color: #9a9ab0; }
+.input-field:focus,
+textarea:focus{
+    border-color: rgba(109, 40, 217, 0.5);
+    box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.12);
+}
+
+/* Footer */
+footer{
+    background: rgba(255,255,255,0.75);
+    border-top: 1px solid var(--line);
+}
+.top-footer p{ color: var(--ink); }
+.footer_menu_list a{ color: var(--ink-3); }
+.footer_menu_list a:hover{ color: var(--accent); }
+.bottom-footer{ color: var(--ink-3); }
+.bottom-footer a{ color: var(--accent); }
+
+/* Theme switch link */
+.theme-switch{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 200;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background: var(--ink);
+    box-shadow: 0 12px 28px rgba(20,20,43,0.25);
+}
+.theme-switch i{ font-size: 16px; }
+
+@media only screen and (max-width: 900px){
+    .nav-menu{
+        background: rgba(255,255,255,0.92);
+        border-top: 1px solid var(--line);
+    }
+}

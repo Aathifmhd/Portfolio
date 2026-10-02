@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum vitae of Mohamed Aathif — Computer Science undergraduate and aspiring software engineer.">
+    <meta name="theme-color" content="#f7f9fc">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./engineer.css">
+
+    <title>CV · Mohamed Aathif</title>
+</head>
+<body>
+    <!-- Background animation: code symbols drifting up behind the whole page -->
+    <div class="code-rain" id="codeRain" aria-hidden="true"></div>
+
+    <!-- ========== NAV ========== -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo" aria-label="Mohamed Aathif — portfolio home">
+                <span class="br">&lt;</span>aathif<span class="br">/&gt;</span><span class="caret" aria-hidden="true"></span>
+            </a>
+            <div class="nav-actions">
+                <a class="btn btn-sm" href="index.html"><i class="uil uil-arrow-left"></i> Portfolio</a>
+                <a class="btn btn-primary btn-sm" href="My Resume.pdf" download="Mohamed Aathif_CV.pdf"><i class="uil uil-file-download-alt"></i> Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cv-page">
+        <div class="container">
+
+            <section class="cv-head">
+                <div class="cv-id">
+                    <div class="avatar"><img src="./profile.webp" alt="Mohamed Aathif"></div>
+                    <div>
+                        <p class="eyebrow">// curriculum vitae</p>
+                        <h1>Mohamed Aathif</h1>
+                        <p class="cv-sub">Computer Science Undergraduate · Aspiring Software Engineer · Kandy, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="cv-actions">
+                    <a class="btn btn-accent" href="My Resume.pdf" download="Mohamed Aathif_CV.pdf"><i class="uil uil-file-download-alt"></i> Download CV</a>
+                    <a class="btn" href="My Resume.pdf" target="_blank" rel="noopener"><i class="uil uil-external-link-alt"></i> Open in new tab</a>
+                </div>
+            </section>
+
+            <section class="cv-viewer" aria-label="CV preview">
+                <div class="cw-bar">
+                    <div class="cw-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <div class="cw-tab"><b class="pdf">PDF</b> Mohamed Aathif_CV.pdf</div>
+                </div>
+                <div class="cv-frame">
+                    <iframe src="My Resume.pdf#view=FitH" title="Mohamed Aathif — CV (PDF)"></iframe>
+                </div>
+                <div class="cw-foot">
+                    <span>read-only ● PDF</span>
+                    <span class="ok">✓ latest version</span>
+                </div>
+            </section>
+
+            <p class="cv-note">
+                Preview not showing? Some phones don't display PDFs inside a page —
+                <a href="My Resume.pdf" target="_blank" rel="noopener">open the CV directly</a> or download it above.
+            </p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© <span id="year">2026</span> Mohamed Aathif. All rights reserved.</span>
+            <span class="mono">aathifmhd2000@gmail.com · +94 76 944 2270</span>
+            <div class="footer-links">
+                <a href="index.html">← Back to portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./code-rain.js"></script>
+    <script src="./page.js"></script>
+</body>
+</html>
