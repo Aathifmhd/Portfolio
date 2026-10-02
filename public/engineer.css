@@ -251,6 +251,9 @@ i.uil{ line-height: 1; }
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* room for the "g" descender, which the gradient would otherwise clip */
+    padding-bottom: .12em;
+    margin-bottom: -.12em;
 }
 .lede{
     margin-top: 22px;
@@ -1161,4 +1164,11 @@ textarea{
     .case-page{ padding-top: 36px; }
     .case-switch{ display: flex; width: 100%; }
     .case-switch a{ flex: 1; justify-content: center; white-space: nowrap; padding: 9px 8px; gap: 6px; }
+}
+
+/* Desktop: size the hero heading to the left column so "Software Engineer." stays on one line.
+   The role text is ~8.8× its font size wide; the column is ~(viewport − 120px) × 0.525. */
+@media (min-width: 961px){
+    .hero h1{ font-size: min(60px, calc((100vw - 120px) * 0.056)); }
+    .hero h1 .role{ white-space: nowrap; }
 }
